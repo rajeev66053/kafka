@@ -13,6 +13,9 @@ kafka-server-start.bat D:\kafka\kafka_2.13-2.8.1\config\server.properties
 # Create Topic:
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 -topic kafkaTopic
 
+#List All Topic
+kafka-topics.bat --list --zookeeper localhost:2181
+
 # Produce a message 
 kafka-console-producer.bat --broker-list localhost:9092 --topic kafkaTopic
 
