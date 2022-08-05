@@ -21,3 +21,10 @@ kafka-console-producer.bat --broker-list localhost:9092 --topic kafkaTopic
 
 # Consume a message
 kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkaTopic
+
+
+
+* It is must to setup  zookeeper for kafka. Zookeeper performs many task for kafka but in short it manages the kafka cluster state.
+
+* By default the kafka server started on port 9092.Zookeper server started on port 2181.
+* Group Id in kafka: Consumer groups give kafka the flexibility to have the advantages of both message queuing and publish-subscribe models.
